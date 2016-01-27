@@ -1,0 +1,9 @@
+#!/bin/bash
+
+python pynsqauthd.py \
+  --data_file=auth/auth_testdata.csv \
+  --http_address=0.0.0.0:4181 \
+  --ttl=3600 \
+  --oauth2-echo-endpoint=http://localhost:14000/info \
+  --oauth2-response-path=data.login \
+  --debug=true

@@ -1,0 +1,3 @@
+nsq_tail -topic="write_test" -channel="ch" -lookupd-http-address=127.0.0.1:4161&
+nsq_to_file --topic=write_test --output-dir=./
+--lookupd-http-address=127.0.0.1:4161&

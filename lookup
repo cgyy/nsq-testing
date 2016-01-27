@@ -1,0 +1,4 @@
+#!/bin/bash
+
+nsqlookupd -config nsqlookupd1.cfg 2> /dev/null&
+nsqlookupd -config nsqlookupd2.cfg 2> /dev/null&

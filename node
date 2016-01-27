@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# make array
+args=("$@")
+# array counts
+argc=${#args[@]}
+
+# display help
+help() {
+cat << EndOfLine
+ node 1
+   Run nsqd with nsqd1.cfg
+ node 2
+   Run nsqd with nsqd2.cfg
+ node 3
+   Run nsqd with nsqd3.cfg
+ node 4
+   Run nsqd with nsqd4.cfg
+EndOfLine
+}
+
+if [ $argc == 0 ]; then 
+  help
+fi
+
+nsqd -config nsqd${args[0]}.cfg 2> /dev/null&
+
