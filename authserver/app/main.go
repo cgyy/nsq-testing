@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"./authserver"
 	"github.com/RangelReale/osin"
+	"github.com/warpizen/nsq-testing/authserver"
 	"gopkg.in/mgo.v2"
 )
 
