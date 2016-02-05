@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd auth/complete && ./complete 2> /dev/null &
-
